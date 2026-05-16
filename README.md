@@ -61,9 +61,8 @@ models/
 
 ## 📊 Evaluation
 
-python evaluation/run_ppo.py
+python eval/evaluate.py
 
-python evaluation/fcfs.py
 
 ---
 
