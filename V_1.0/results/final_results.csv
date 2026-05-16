@@ -1,0 +1,3 @@
+method,reward,utilization,completion,reconfigs
+PPO,1288742.6509064122,0.301,1.0,386
+FCFS,1047993.190050395,0.292,1.0,9910
