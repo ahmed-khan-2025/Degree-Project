@@ -16,7 +16,6 @@ The system uses Proximal Policy Optimization (PPO) to improve scheduling decisio
   - Utilization
   - Completion rate
   - Reconfiguration count
-- Training and evaluation pipeline
 
 ---
 
@@ -31,7 +30,7 @@ The environment simulates:
 The agent selects scheduling strategies to:
 - Maximize utilization
 - Minimize reconfigurations
-- Improve overall throughput and efficiency
+- Improve overall efficiency
 
 ---
 
@@ -48,38 +47,36 @@ The agent selects scheduling strategies to:
 
 ## ⚙️ Installation
 
-Clone the repository and install dependencies:
+pip install -r requirements.txt
 
-```bash
-- pip install -r requirements.txt
+---
 
-
-🏋️ Training
-
-Train the PPO agent:
+## 🏋️ Training
 
 python train/train.py
 
-The trained model will be saved in:
-
 models/
 
-📊 Evaluation
+---
 
-Run PPO evaluation:
+## 📊 Evaluation
 
 python evaluation/run_ppo.py
 
-📁 Outputs
+python evaluation/fcfs.py
 
-After running the project, you will get:
+---
 
-Trained model → models/
-Training logs → results/
-Evaluation results → printed in terminal or saved as CSV (if enabled)
+## 📁 Outputs
 
-📌 Notes
+- models/ → trained model
+- results/ → logs
+- terminal → evaluation output
 
-Ensure data/chambers.json exists before training.
-Train the model before running evaluation.
-Results may vary slightly due to randomness in the environment and PPO training.
+---
+
+## 📌 Notes
+
+Ensure data/chambers.json exists before running.  
+Train before evaluation.  
+Results may vary due to randomness.
