@@ -51,7 +51,7 @@ The agent selects scheduling strategies to:
 Clone the repository and install dependencies:
 
 ```bash
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 🏋️ Training
@@ -63,15 +63,13 @@ python train/train.py
 The trained model will be saved in:
 
 models/
+
 📊 Evaluation
 
 Run PPO evaluation:
 
 python evaluation/run_ppo.py
 
-Run baseline comparison:
-
-python evaluation/fcfs.py
 📁 Outputs
 
 After running the project, you will get:
@@ -79,10 +77,9 @@ After running the project, you will get:
 Trained model → models/
 Training logs → results/
 Evaluation results → printed in terminal or saved as CSV (if enabled)
+
 📌 Notes
+
 Ensure data/chambers.json exists before training.
 Train the model before running evaluation.
 Results may vary slightly due to randomness in the environment and PPO training.
-🎯 Goal
-
-To optimize scheduling efficiency in a simulated industrial battery testing environment using reinforcement learning (PPO), focusing on reducing reconfigurations and improving resource utilization.
