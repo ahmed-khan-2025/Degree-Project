@@ -22,16 +22,7 @@ class ResourceEnv(gym.Env):
         # =================================================
         # ACTIONS
         # =================================================
-        #
-        # 0 = same type
-        # 1 = maximize utilization
-        # 2 = minimize reconfig
-        # 3 = highest current
-        # 4 = balanced
-        # 5 = random
-        #
-        # =================================================
-
+      
         self.action_space = gym.spaces.Discrete(6)
 
         self.observation_space = gym.spaces.Box(
