@@ -67,7 +67,7 @@ df = pd.DataFrame([
 ])
 
 df.to_csv(
-    "results/single_results.csv",
+    "results/final_results.csv",
     index=False
 )
-print("\nSaved: results/single_results.csv")
+print("\nSaved: results/final_results.csv")
