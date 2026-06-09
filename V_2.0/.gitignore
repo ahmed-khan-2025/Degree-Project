@@ -1,7 +1,9 @@
 __pycache__/
 *.pyc
 
-
+models/
+results/
+plots/
 
 .idea/
 .vscode/
